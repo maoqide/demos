@@ -7,7 +7,7 @@ mail_pass="xxxxxx"		#password
   
 def send_mail(to_list, subject, content):
   
-    msg = MIMEText(content,_subtype='plain','utf-8')  
+    msg = MIMEText(content,_subtype='plain',_charset='utf-8')  
     msg['Subject'] = subject
     msg['From'] = mail_user
     msg['To'] = ";".join(to_list)  
