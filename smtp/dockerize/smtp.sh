@@ -1,0 +1,3 @@
+#!/bin/sh
+
+python smtp.py $MAILTO_LIST $SMTPSERVER $MAILHOST $PASSWORD
